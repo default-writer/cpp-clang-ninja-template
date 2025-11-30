@@ -1,4 +1,4 @@
-# c clang ninja template
+# c/c++ clang ninja template
 
 - clang + ninja
 - assembly files generation (.s)
@@ -29,4 +29,5 @@ ninja -f build.linux.ninja && ./test-memory
 ```bash
 ninja -f build.linux.ninja -t clean > /dev/null 2>&1 && ninja -f build.linux.ninja && ninja -f build.linux.ninja -t clean > /dev/null 2>&1
 ```
+
 
