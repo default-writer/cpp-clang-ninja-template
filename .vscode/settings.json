@@ -113,9 +113,6 @@
         "**/*.cpp": "${fileDirname}/${fileBasenameNoExtension}.s"
     },
     "lldb-dap.executable-path": "/usr/lib/llvm-21/bin/lldb-dap",
-    "clangd.arguments": [
-        "-I/usr/include/c++/13/bits"
-    ],
     "markdownlint.lintWorkspaceGlobs": [
         "**/*.{md,mkd,mdwn,mdown,markdown,markdn,mdtxt,mdtext,workbook}",
         "!**/*.code-search",
