@@ -23,6 +23,7 @@
     "dseight.disasexpl",
     "davidanson.vscode-markdownlint",
     "daylerees.rainglow",
-    "franmastromarino.vs-code-settings-os"
+    "franmastromarino.vs-code-settings-os",
+    "cs50.vscode-presentation-mode"
   ]
 }
