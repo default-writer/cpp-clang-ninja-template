@@ -2,7 +2,7 @@
 
 - clang + ninja
 - assembly files generation (.s)
-- disassembly exploere support (extension: [dseight.disasexpl](https://marketplace.visualstudio.com/items?itemName=dseight.disasexpl))
+- disassembly explorer support (extension: [dseight.disasexpl](https://marketplace.visualstudio.com/items?itemName=dseight.disasexpl))
 
 ## screenshots
 
@@ -29,3 +29,4 @@ ninja -f build.linux.ninja && ./test-memory
 ```bash
 ninja -f build.linux.ninja -t clean > /dev/null 2>&1 && ninja -f build.linux.ninja && ninja -f build.linux.ninja -t clean > /dev/null 2>&1
 ```
+
