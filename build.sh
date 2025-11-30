@@ -1,0 +1,8 @@
+#!/usr/bin/bash -e
+
+# cleanup
+ninja -f build.linux.ninja -t clean > /dev/null 2>&1 
+
+# memory target
+ninja -f build.linux.ninja memory
+ninja -f build.linux.ninja -t clean > /dev/null 2>&1 

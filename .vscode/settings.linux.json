@@ -1,0 +1,127 @@
+{
+  "$schema": "vscode://schemas/settings/user",
+  "clangd.onConfigChanged": "restart",
+  "workbench.colorTheme": "Yitzchok (rainglow)",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.inlayHints.enabled": "off",
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "editor.fontSize": 12,
+  "editor.fontFamily": "'Ubuntu Mono', 'JetBrains Mono', 'ProggyVector', 'Monoid', 'Fira Code', monospace",
+  "window.zoomPerWindow": false,
+  "debug.console.fontSize": 12,
+  "terminal.integrated.fontSize": 12,
+  "chat.editor.fontSize": 12,
+  "chat.fontSize": 12,
+  "errorLens.fontSize": "8",
+  "markdown.preview.fontSize": 12,
+  "scm.inputFontSize": 12,
+  "screencastMode.fontSize": 24,
+  "editor.minimap.sectionHeaderFontSize": 12,
+  "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+  "editor.defaultFoldingRangeProvider": "llvm-vs-code-extensions.vscode-clangd",
+  "fileHeaderComment.parameter": {
+    "*": {
+      "commentbegin": "/*",
+      "commentprefix": " *",
+      "commentend": " */",
+      "author": "default-writer",
+      "license_bsd3": [
+        "/*",
+        "    Copyright (C) 2022-2047 ${year} ${author}",
+        "    All rights reserved.",
+        "",
+        "    Redistribution and use in source and binary forms, with or without",
+        "    modification, are permitted provided that the following conditions are met:",
+        "",
+        "    1. Redistributions of source code must retain the above copyright notice, this",
+        "       list of conditions and the following disclaimer.",
+        "    2. Redistributions in binary form must reproduce the above copyright notice,",
+        "       this list of conditions and the following disclaimer in the documentation",
+        "       and/or other materials provided with the distribution.",
+        "    3. Neither the name of the copyright holder nor the names of its",
+        "       contributors may be used to endorse or promote products derived from",
+        "       this software without specific prior written permission.",
+        "",
+        "    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"",
+        "    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE",
+        "    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE",
+        "    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE",
+        "    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL",
+        "    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR",
+        "    SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER",
+        "    CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,",
+        "    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE",
+        "    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "*/"
+      ]
+    }
+  },
+  "fileHeaderCommentHelper.languageConfigs": {
+    "language_cpp": {
+      "template": [
+        "/*",
+        "    Copyright (C) 2022-2047 ${year} ${author}",
+        "    All rights reserved.",
+        "",
+        "    Project: $(projectName)",
+        "    File: $(currentFile)",
+        "",
+        "    Redistribution and use in source and binary forms, with or without",
+        "    modification, are permitted provided that the following conditions are met:",
+        "",
+        "    1. Redistributions of source code must retain the above copyright notice, this",
+        "       list of conditions and the following disclaimer.",
+        "    2. Redistributions in binary form must reproduce the above copyright notice,",
+        "       this list of conditions and the following disclaimer in the documentation",
+        "       and/or other materials provided with the distribution.",
+        "    3. Neither the name of the copyright holder nor the names of its",
+        "       contributors may be used to endorse or promote products derived from",
+        "       this software without specific prior written permission.",
+        "",
+        "    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"",
+        "    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE",
+        "    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE",
+        "    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE",
+        "    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL",
+        "    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR",
+        "    SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER",
+        "    CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,",
+        "    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE",
+        "    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "*/"
+      ]
+    }
+  },
+  "fileHeaderComment.template": {
+    "*": [
+      "${license_bsd3}"
+    ]
+  },
+  "terminal.integrated.fontFamily": "'Ubuntu Mono'",
+  "editor.fontWeight": "normal",
+  "window.zoomLevel": 0,
+  "clangd.path": "/usr/bin/clangd",
+  "disasexpl.useBinaryParsing": false,
+  "disasexpl.associations": {
+    "**/*.c": "${fileDirname}/${fileBasenameNoExtension}.s",
+    "**/*.cpp": "${fileDirname}/${fileBasenameNoExtension}.s"
+  },
+  "lldb-dap.executable-path": "/usr/lib/llvm-21/bin/lldb-dap",
+  "markdownlint.lintWorkspaceGlobs": [
+    "**/*.{md,mkd,mdwn,mdown,markdown,markdn,mdtxt,mdtext,workbook}",
+    "!**/*.code-search",
+    "!**/bower_components",
+    "!**/node_modules",
+    "!**/.git",
+    "!**/vendor",
+    "!**/.clang-format",
+    "!**/.clang-tidy"
+  ]
+}

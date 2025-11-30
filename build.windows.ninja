@@ -1,0 +1,36 @@
+# ------------------------------------------------------------------
+# 1. common variables
+# ------------------------------------------------------------------
+cc          = clang-cl          # use the MSVC‑compatible clang front‑end
+cflags      = /W3 /Zi /W4       # -Wall -Wextra -g equivalent
+ldflags     = /DEBUG            # /DEBUG is the Windows equivalent of -g
+
+# ------------------------------------------------------------------
+# 2. basic rules
+# ------------------------------------------------------------------
+rule cc
+  command   = $cc $cflags /c /Fo$out $in
+  description = Compiling $in
+
+rule link
+  command   = $cc $ldflags /Fe$out $in
+  description = Linking $out
+
+# ------------------------------------------------------------------
+# 3. memory target
+# ------------------------------------------------------------------
+# compile each .c into an .obj
+build test/test_memory.obj: cc test/test_memory.c
+build src/json.obj:         cc src/json.c
+build test/test.obj:        cc test/test.c
+build test/utils.obj:       cc test/utils.c
+
+# link all objects into the executable
+build test-memory.exe: link test/test_memory.obj src/json.obj test/test.obj test/utils.obj
+build memory: phony test-memory.exe
+
+# ------------------------------------------------------------------
+# 4. default target
+# ------------------------------------------------------------------
+default memory
+

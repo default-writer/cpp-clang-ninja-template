@@ -1,0 +1,28 @@
+{
+  "recommendations": [
+    "llvm-vs-code-extensions.vscode-clangd",
+    "exelord.git-commits",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "guodongsun.vscode-git-cruise",
+    "huizhou.githd",
+    "letmaik.git-tree-compare",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "codezombiech.gitignore",
+    "eamodio.gitlens",
+    "ms-vscode.hexeditor",
+    "llvm-vs-code-extensions.lldb-dap",
+    "boshyxd.remove-all-comments",
+    "aslamanver.vsc-export",
+    "cs128.cs128-clang-tidy",
+    "therepoclub.fileheadergenerator",
+    "doi.fileheadercomment",
+    "saber2pr.file-git-history",
+    "batyan-soft.fast-tasks",
+    "dseight.disasexpl",
+    "davidanson.vscode-markdownlint",
+    "daylerees.rainglow",
+    "franmastromarino.vs-code-settings-os"
+  ]
+}

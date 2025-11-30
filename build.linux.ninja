@@ -1,0 +1,47 @@
+# ------------------------------------------------------------------
+# 1. common variables
+# ------------------------------------------------------------------
+cc          = clang++
+cflags      = -Wall -Wextra -g -Wno-deprecated
+ldflags     = -fuse-ld=lld -lrt
+
+# ------------------------------------------------------------------
+# 2. basic rules
+# ------------------------------------------------------------------
+rule cc
+  command   = $cc $cflags -c -w -fno-verbose-asm -o $out $in
+  description = Compiling $in
+
+rule asm2obj
+  command   = $cc $cflags -c -w -fno-verbose-asm -o $out $in
+  description = Assembling $in
+
+rule gen_asm_clean
+  command   = $cc $cflags -S -w -fno-verbose-asm -o $out.tmp $in && sed -i 's/ md5 0x[0-9a-f]\+//g' $out.tmp && mv $out.tmp $out
+  description = Gen+Clean ASM $in
+
+rule link
+  command   = $cc $ldflags -o $out $in
+  description = Linking $out
+
+# ------------------------------------------------------------------
+# 3. memory target
+# ------------------------------------------------------------------
+build test/test_memory.s: gen_asm_clean test/test_memory.c
+build src/json.s:         gen_asm_clean src/json.c
+build test/test.s:        gen_asm_clean test/test.c
+build test/utils.s:       gen_asm_clean test/utils.c
+
+# Assemble cleaned .s files directly
+build test/test_memory.o: asm2obj test/test_memory.s
+build src/json.o:         asm2obj src/json.s
+build test/test.o:        asm2obj test/test.s
+build test/utils.o:       asm2obj test/utils.s
+
+build test-memory: link test/test_memory.o src/json.o test/test.o test/utils.o
+build memory: phony test-memory
+
+# ------------------------------------------------------------------
+# 4. default target
+# ------------------------------------------------------------------
+default memory
