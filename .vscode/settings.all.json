@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/settings/user",
-  "clangd.onConfigChanged": "restart",
+  ""clangd.onConfigChanged": "prompt",
   "workbench.colorTheme": "Yitzchok (rainglow)",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
