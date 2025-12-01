@@ -48,3 +48,5 @@ libs/
 .tools/
 .history/
 .vscode/settings.json
+.ninja_log
+**/*.s
