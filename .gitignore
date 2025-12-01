@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Assembler
+*.s
+
 # Compiled Object files
 *.slo
 *.lo
@@ -49,4 +52,3 @@ libs/
 .history/
 .vscode/settings.json
 .ninja_log
-**/*.s
