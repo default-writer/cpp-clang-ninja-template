@@ -104,7 +104,7 @@
     },
     "terminal.integrated.fontFamily": "'Ubuntu Mono'",
     "editor.fontWeight": "normal",
-    "window.zoomLevel": 6,
+    "window.zoomLevel": 0,
     "clangd.path": "/usr/bin/clangd",
     "disasexpl.useBinaryParsing": false,
     "disasexpl.associations": {
