@@ -128,7 +128,7 @@
     "commands": [
       "workbench.action.closeSidebar"
     ],
-    "window.zoomLevel": 6
+    "window.zoomLevel": 4
   },
   "[json]": {
     "json": "vscode.json-language-features"
