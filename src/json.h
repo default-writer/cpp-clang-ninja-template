@@ -5,7 +5,7 @@
  * Created:
  *   April 12, 1961 at 09:07:34 PM GMT+3
  * Modified:
- *   November 24, 2025 at 6:58:46 AM GMT+3
+ *   December 1, 2025 at 4:31:07 AM GMT+3
  *
  */
 /*
@@ -134,7 +134,7 @@ typedef struct json_value {
  * @brief Represents a key-value pair in a JSON object.
  */
 typedef struct json_object {
-  reference key;     // Key of the object.
+  reference key;    // Key of the object.
   json_value value; // Pointer to the JSON value.
 } json_object;
 
